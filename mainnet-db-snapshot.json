@@ -1,0 +1,10 @@
+{   "db_date": 16:53 Sat, Sep 13, 2025,
+    "node_version": 10.3.1,
+    "block": 12384371,
+    "epoch": 582,
+    "era": "Conway",
+    "hash": "ec3c6f162f977f995a1163002f830f013c8a45725fb5693a3200336e113f7482",
+    "slot": 166194391,
+    "slotInEpoch": 133591,
+    "slotsToEpochEnd": 298409
+}
