@@ -8,8 +8,8 @@
                     const div = document.createElement('div');
                     div.innerHTML = `
                         <h2>${item.id}</h2>
-                        <p>DB Date: ${item.db_date}</p>
-                        <p>Node Version: ${item.node_version}</p>
+                        <p>DBDate: ${item.db_date}</p>
+                        <p>NodeVersion: ${item.node_version}</p>
                     `;
                     container.appendChild(div);
                 });
