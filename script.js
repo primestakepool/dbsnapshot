@@ -1,6 +1,6 @@
     // script.js
     document.addEventListener('DOMContentLoaded', () => {
-        fetch('https://primestakepool.github.io/dbsnapshot/mainnet-db-snapshot.json') // Path to your JSON file
+        fetch('mainnet-db-snapshot.json') // Path to your JSON file
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('data-container');
