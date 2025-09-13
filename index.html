@@ -1,19 +1,11 @@
 <html>
 <head></head>
 <body>
-    <script>
-        function fetchJSONData() {
-            fetch('./mainnet-db-snapshot.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.json();  
-                })
-                .then(data => console.log(data))  
-                .catch(error => console.error('Failed to fetch data:', error)); 
-        }
-        fetchJSONData();  
+    <h1>JSON Import Example</h1>
+    <p>Check your console for fetched data.</p>
+    <script type="module">
+        import jsonData from './mainnet-db-snapshot.json' assert { type: 'json' };
+        console.log(jsonData);
     </script>
 </body>
 </html>
