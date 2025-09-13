@@ -1,5 +1,5 @@
 {   "db_date": "16:53 Sat, Sep 13, 2025",
-    "node_version": "10.3.1",
+    "node_version": 10.3.1,
     "block": 12384371,
     "epoch": 582,
     "era": "Conway",
