@@ -41,29 +41,10 @@
     </style>
 </head>
 <body>
-
-    <div class="code-container">
         <pre id="myCodeBlock">
             <code>
 wget -q -O - --show-progress "https://dbsnapshot.nbg1.your-objectstorage.com/db.tar.xz" | tar -xJ -C /path to/db/folder
             </code>
         </pre>
-       <button class="copy-button" onclick="copyCode()">Copy</button>
-    </div>
-    <script>
-        function copyCode() {
-            const codeBlock = document.getElementById('myCodeBlock');
-            const codeText = codeBlock.innerText;
-
-            navigator.clipboard.writeText(codeText)
-                .then(() => {
-                    alert('Code copied to clipboard!');
-                })
-                .catch(err => {
-                    console.error('Failed to copy code: ', err);
-                    alert('Failed to copy code.');
-                });
-        }
-    </script>
 </body>
 </html>
