@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Button Example</title>
+</head>
+<body>
+
+    <p id="textToCopy">This is the text that will be copied to your clipboard.</p>
+    <button onclick="copyContent()">Copy Text</button>
+
+    <script>
+        function copyContent() {
+            // Get the text from the element with id "textToCopy"
+            var copyText = document.getElementById("textToCopy").innerText;
+
+            // Use the Clipboard API to write the text to the clipboard
+            navigator.clipboard.writeText(copyText)
+                .then(() => {
+                    alert("Text copied to clipboard!");
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }
+    </script>
+
+</body>
+</html>
