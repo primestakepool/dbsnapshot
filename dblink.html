@@ -51,7 +51,7 @@ wget -q -O - --show-progress "https://dbsnapshot.nbg1.your-objectstorage.com/db.
         <button class="copy-button" onclick="copyCode()">Copy</button>
     </div>
     <script>
-        async function copyCode() {
+        function copyCode() {
             const codeBlock = document.getElementById('myCodeBlock');
             const codeText = codeBlock.innerText;
 
